@@ -1,0 +1,10 @@
+version: '3'
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "15672:15672"  # Porta da interface de gerenciamento (UI)
+      - "5672:5672"    # Porta padrão do protocolo AMQP
+    environment:
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: admin

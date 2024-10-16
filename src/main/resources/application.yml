@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: api-debts-gotham-city-hall
+  datasource:
+    url: jdbc:postgresql://localhost:5433/gothamcity_db
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin
+    virtual-host: /
+    connection-timeout: 15000
